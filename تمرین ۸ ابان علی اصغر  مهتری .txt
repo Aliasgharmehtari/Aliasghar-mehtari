@@ -1,0 +1,30 @@
+using System; 
+using System.Data; 
+using System.Data.SqlClient; 
+using System.Windows.Forms; 
+  
+namespace WinFormsApp1 {
+     public partial class Form1 : Form
+     {
+      
+ 
+        public Form1()
+         {
+             InitializeComponent();
+         }
+        private void button1_Click(object sender, EventArgs e)
+         {
+           string us = "Ali";
+           string pas = "1382";
+           if (textus.text==us && textpas.text==pas)
+           {
+             form2 i = new form2();
+             i.show();
+             Hide();
+             messageBox.show("ورود موفقیت امیز بود");
+           }
+           else
+           {
+             messageBox.show("دوباره تلاش کنید ");
+           }
+      }
